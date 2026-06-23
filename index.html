@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Blog Colorido</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ff6ec4, #7873f5, #4ade80);
+      color: #333;
+    }
+
+    header {
+      background: rgba(0,0,0,0.6);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: #222;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 15px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: #ffcc00;
+      color: black;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .post {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .post:hover {
+      transform: scale(1.05);
+    }
+
+    .post img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .post-content {
+      padding: 15px;
+    }
+
+    .post-content h2 {
+      margin-top: 0;
+      color: #ff4d6d;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: rgba(0,0,0,0.7);
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1> Meu Blog </h1>
+    <p>Um site simples, bonito e chamativo</p>
+  </header>
+
+  <nav>
+    <a href="#">Início</a>
+    <a href="#">Posts</a>
+    <a href="#">Sobre</a>
+    <a href="#">Contato</a>
+  </nav>
+
+  <div class="container">
+
+    <div class="post">
+      <img src="https://picsum.photos/400/200?random=1" alt="imagem">
+      <div class="post-content">
+        <h2>Primeiro Post</h2>
+        <p>Esse é um exemplo de blog com cores vibrantes e imagens simples.</p>
+      </div>
+    </div>
+
+    <div class="post">
+      <img src="https://picsum.photos/400/200?random=2" alt="imagem">
+      <div class="post-content">
+        <h2>Dicas de Design</h2>
+        <p>Usar cores e sombras ajuda a deixar o site mais moderno.</p>
+      </div>
+    </div>
+
+    <div class="post">
+      <img src="https://picsum.photos/400/200?random=3" alt="imagem">
+      <div class="post-content">
+        <h2>HTML + CSS</h2>
+        <p>Com apenas HTML e CSS já dá pra criar sites muito bonitos.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2026 Meu Blog - Feito com Suyane</p>
+  </footer>
+
+</body>
+</html>
